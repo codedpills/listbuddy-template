@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ListBuddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/bulma-pricingtable.min.css">
+    <link rel="stylesheet" href="assets/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent main-navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                   <h4>ListBuddy</h4>
+                </a>
+                <div class="navbar-burger burger" data-target="appnavbar">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+            
+            <div id="appnavbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="">
+                        Features
+                    </a>
+                    <a class="navbar-item" href="">
+                        Pricing
+                    </a>
+                    <a class="navbar-item" href="">
+                        Support
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            John Snow
+                        </a> 
+                        <div class="navbar-dropdown">
+                            <!-- Other navbar items -->
+                            <a href="#" class="navbar-item">Account settings</a>
+                            <a href="payment_settings.html" class="navbar-item">Payment Settings</a>
+                            <a href="" class="navbar-item">Manage Users</a>
+                        </div>
+                    </div>
+                    <a class="navbar-item is-active" href="">
+                        <span class="mdi mdi-logout"></span>
+                        &nbsp;
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="colums">
+        <div class="column is-10 is-offset-1">
+            <div class="form-box__header">
+                <h3 class="is-size-5 has-text-centered">Select Account Plan</h3>
+            </div>
+            
+            <div class="pricing-table listbuddy_plans">
+                <div class="pricing-plan is-warning">
+                  <div class="plan-header">Startups</div>
+                  <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>40</span>/month</div>
+                  <div class="plan-items">
+                    <div class="plan-item">20GB Storage</div>
+                    <div class="plan-item">25 Domains</div>
+                    <div class="plan-item">1TB Bandwidth</div>
+                    <div class="plan-item">-</div>
+                  </div>
+                  <div class="plan-footer">
+                    <button class="button is-fullwidth">Choose</button>
+                  </div>
+                </div>
+              
+                <div class="pricing-plan is-active">
+                  <div class="plan-header">Growing Team</div>
+                  <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>60</span>/month</div>
+                  <div class="plan-items">
+                    <div class="plan-item">200GB Storage</div>
+                    <div class="plan-item">50 Domains</div>
+                    <div class="plan-item">1TB Bandwidth</div>
+                    <div class="plan-item">100 Email Boxes</div>
+                  </div>
+                  <div class="plan-footer">
+                    <button class="button is-fullwidth">Choose</button>
+                  </div>
+                </div>
+              
+                <div class="pricing-plan is-danger">
+                  <div class="plan-header">Enterprise</div>
+                  <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>100</span>/month</div>
+                  <div class="plan-items">
+                    <div class="plan-item">2TB Storage</div>
+                    <div class="plan-item">100 Domains</div>
+                    <div class="plan-item">1TB Bandwidth</div>
+                    <div class="plan-item">1000 Email Boxes</div>
+                  </div>
+                  <div class="plan-footer">
+                    <button class="button is-fullwidth">Choose</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

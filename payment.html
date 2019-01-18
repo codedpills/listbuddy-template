@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ListBuddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent main-navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                   <h4>ListBuddy</h4>
+                </a>
+                <div class="navbar-burger burger" data-target="appnavbar">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+            
+            <div id="appnavbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="">
+                        Features
+                    </a>
+                    <a class="navbar-item" href="">
+                        Pricing
+                    </a>
+                    <a class="navbar-item" href="">
+                        Support
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            John Snow
+                        </a> 
+                        <div class="navbar-dropdown">
+                            <!-- Other navbar items -->
+                            <a href="#" class="navbar-item">Account settings</a>
+                            <a href="payment_settings.html" class="navbar-item">Payment Settings</a>
+                            <a href="" class="navbar-item">Manage Users</a>
+                        </div>
+                    </div>
+                    <a class="navbar-item is-active" href="">
+                        <span class="mdi mdi-logout"></span>
+                        &nbsp;
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="colums">
+        <div class="column is-8 is-offset-2">
+            <div class="form-box__header">
+                <h3 class="is-size-5 has-text-centered">Select Account Plan</h3>
+            </div>
+            
+            <div class="box payment-box">
+                <h5 class="">Chosen subscription: Monthly at $10/month</h3>
+                <br>
+                <!-- Toggle tabs -->
+                <div class="tabs is-toggle" id="tabs">
+                    <ul>
+                        <li class="is-active" data-tab="1">
+                            <a>
+                                <span class="icon is-small"><i class="mdi mdi-credit-card"></i></span>
+                                <span>Pay with card</span>
+                            </a>
+                        </li>
+                        <li data-tab="2">
+                            <a>
+                                <span class="icon is-small"><svg style="width:24px; height:24px" viewBox="0 0 24 24">
+                                    <path fill="#000000" d="M8.32,21.97C8.21,21.92 8.08,21.76 8.06,21.65C8.03,21.5 8,21.76 8.66,
+                                    17.56C9.26,13.76 9.25,13.82 9.33,13.71C9.46,13.54 9.44,13.54 10.94,13.53C12.26,13.5 12.54,
+                                    13.5 13.13,13.41C16.38,12.96 18.39,11.05 19.09,7.75C19.13,7.53 19.17,7.34 19.18,7.34C19.18,
+                                    7.33 19.25,7.38 19.33,7.44C20.36,8.22 20.71,9.66 20.32,11.58C19.86,13.87 18.64,15.39 16.74,
+                                    16.04C15.93,16.32 15.25,16.43 14.05,16.46C13.25,16.5 13.23,16.5 13,16.65C12.83,16.82 12.84,
+                                    16.79 12.45,19.2C12.18,20.9 12.08,21.45 12.04,21.55C11.97,21.71 11.83,21.85 11.67,21.93L11.56,
+                                    22H10C8.71,22 8.38,22 8.32,21.97V21.97M3.82,19.74C3.63,19.64 3.5,19.47 3.5,19.27C3.5,19 6.11,
+                                    2.68 6.18,2.5C6.27,2.32 6.5,2.13 6.68,2.06L6.83,2H10.36C14.27,2 14.12,2 15,2.2C17.62,2.75 18.82,
+                                    4.5 18.37,7.13C17.87,10.06 16.39,11.8 13.87,12.43C13,12.64 12.39,12.7 10.73,12.7C9.42,12.7 9.32,
+                                    12.71 9.06,12.85C8.8,13 8.59,13.27 8.5,13.6C8.46,13.67 8.23,15.07 7.97,16.7C7.71,18.33 7.5,
+                                    19.69 7.5,19.72L7.47,19.78H5.69C4.11,19.78 3.89,19.78 3.82,19.74V19.74Z" />
+                                    </svg></span>
+                                <span>Pay with Paypal</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tab contents -->
+                <div id="tab-content">
+                    <div class="is-active tab-content" data-content="1">
+                        <div class="log-intro">
+                            <h3 class="is-size-5">Please enter your card details</h3>
+                        </div>
+                        
+                        <form action="" method="" class="btree_form">
+                            <div class="field">
+                                <label class="label">Card Number</label>
+                                <!--  Hosted Fields div container -->
+                                <div class="control b-control" id="card-number"></div>
+                                <small><span class="helper-text"></span></small>
+                            </div>
+                            <div>
+                                <label for="" class="label">Expiration Date</label>
+                                <div class="field field-body">
+                                    <div class="field">
+                                        <!--  Hosted Fields div container -->
+                                        <div class="control b-control" id="expiration-month"></div>
+                                        <small><span class="helper-text"></span></small>
+                                    </div>
+                                    <div class="field">
+                                        <!--  Hosted Fields div container -->
+                                        <div class="control b-control" id="expiration-year"></div>
+                                        <small><span class="helper-text"></span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field field-body">
+                                <div class="field">
+                                    <label class="label">Security Code</label>
+                                    <!--  Hosted Fields div container -->
+                                    <div class="control b-control" id="cvv"></div>
+                                    <small><span class="helper-text"></span></small>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Zip Code</label>
+                                    <!--  Hosted Fields div container -->
+                                    <div class="control b-control" id="postal-code"></div>
+                                    <small><span class="helper-text"></span></small>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <button value="submit"class="button btn-custom-danger">
+                                    Pay with &nbsp<span id="card-type"> Card</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-content" data-content="2">
+                        <div class="log-intro">
+                            <h3 class="is-size-5">Please subscribe via Paypal</h3>
+                            <br>
+                            <!-- PayPal button is injected here -->
+                            <div id="paypal-container"></div>
+                            <!-- PayPal button -->
+                            <script src="https://www.paypalobjects.com/api/button.js?"
+                                data-merchant="braintree"
+                                data-id="paypal-button"
+                                data-button="checkout"
+                                data-color="gold"
+                                data-size="medium"
+                                data-shape="pill"
+                                data-button_type="submit"
+                                data-button_disabled="false"
+                            ></script>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Load jQuery -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+
+    <!-- Load the required client component. -->
+    <script src="https://js.braintreegateway.com/web/3.34.0/js/client.min.js"></script>
+
+    <!-- Load Hosted Fields component. -->
+    <script src="https://js.braintreegateway.com/web/3.34.0/js/hosted-fields.min.js"></script>
+
+    <script src="https://js.braintreegateway.com/js/braintree-2.32.1.min.js"></script>
+
+    <!-- Load Braintree form input settings -->
+    <script src="assets/js/braintree_form.js"></script>
+
+    <script>
+        // Toggle tabs
+        $(document).ready(function() {
+            $('#tabs li').on('click', function() {
+                var tab = $(this).data('tab');
+
+                $('#tabs li').removeClass('is-active');
+                $(this).addClass('is-active');
+
+                $('#tab-content .tab-content').removeClass('is-active');
+                $('.tab-content[data-content="' + tab + '"]').addClass('is-active');
+            });
+        });
+    </script>
+</body>
+</html>
+

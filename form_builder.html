@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ListBuddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/bulma-tooltip.min.css">
+    <link rel="stylesheet" href="assets/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent main-navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                   <h4>ListBuddy</h4>
+                </a>
+                <div class="navbar-burger burger" data-target="appnavbar">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+            
+            <div id="appnavbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="">
+                        Features
+                    </a>
+                    <a class="navbar-item" href="">
+                        Pricing
+                    </a>
+                    <a class="navbar-item" href="">
+                        Support
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            John Snow
+                        </a> 
+                        <div class="navbar-dropdown">
+                            <!-- Other navbar items -->
+                            <a href="#" class="navbar-item">Account settings</a>
+                            <a href="payment_settings.html" class="navbar-item">Payment Settings</a>
+                            <a href="" class="navbar-item">Manage Users</a>
+                        </div>
+                    </div>
+                    <a class="navbar-item is-active" href="">
+                        <span class="mdi mdi-logout"></span>
+                        &nbsp;
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="colums">
+        <div class="column is-8 is-offset-2">
+            <div class="columns">
+                <div class="column is-5">
+                    <div class="app-box form-builder-options-and-settings">
+                        <div class="form-builder-options-and-settings__tabs">
+                            <div class="tabs is-boxed is-fullwidth">
+                                <ul>
+                                    <li class="is-active">
+                                        <a>
+                                            <span>Add Fields</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span>Field Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span>Form Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box form-builder-options-and-settings__content">
+                            <h5 class="is-size-5 is-uppercase">Input field types</h5>
+                            <div class="column">
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-textbox"></i>
+                                            </span>
+                                            <span>Single Line</span>
+                                        </button>
+                                    </p>
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-numeric"></i>
+                                            </span>
+                                            <span>Number</span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-text-shadow"></i>
+                                            </span>
+                                            <span>Multiple Line</span>
+                                        </button>
+                                    </p>
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-radiobox-marked"></i>
+                                            </span>
+                                            <span>Radio</span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-phone"></i>
+                                            </span>
+                                            <span>Phone</span>
+                                        </button>
+                                    </p>
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-checkbox-multiple-marked-outline"></i>
+                                            </span>
+                                            <span>Checkbox</span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-calendar"></i>
+                                            </span>
+                                            <span>Date</span>
+                                        </button>
+                                    </p>
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-arrow-down-drop-circle-outline"></i>
+                                            </span>
+                                            <span>Dropdown</span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-email-outline"></i>
+                                            </span>
+                                            <span>Email</span>
+                                        </button>
+                                    </p>
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-clock"></i>
+                                            </span>
+                                            <span>Time</span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button form-builder-options-and-settings__content--btn">
+                                            <span class="icon">
+                                                <i class="mdi mdi-map-marker-plus"></i>
+                                            </span>
+                                            <span>Address</span>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-7">
+                    <div class="box app-box form-builder-preview">
+                        <div class="form-builder-preview__header">
+                            <h5 class="is-size-5">Untitled Form</h5>
+                            <p>
+                                This is my form. Kindly fill it out. Thanks!
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="form-builder-preview__content">
+                            <div class="field">
+                                <label class="label">Untitled</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Text input">
+                                </div>
+                            </div>
+                                
+                            <div class="field">
+                                <label class="label">Dropdown</label>
+                                <div class="control">
+                                    <div class="select">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <div class="field">
+                                <label class="label">Multiple Line</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                                </div>
+                            </div>
+                                
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                    <input type="checkbox">
+                                        Checkbox
+                                    </label>
+                                </div>
+                            </div>
+                                
+                            <div class="field">
+                                <div class="control">
+                                    <label class="radio">
+                                        <input type="radio" name="question">
+                                        Radio
+                                    </label>
+                                </div>
+                            </div>
+                                
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button btn-custom-primary">Reset</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button btn-custom-danger">Save form</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

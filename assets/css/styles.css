@@ -1,0 +1,206 @@
+/* Brand Colors and Font For ListBuddy */
+/* 
+    pink color: #F50057
+    Primary button color same pink as logo
+    Secondary button color(blue): #1E88E5
+    Secondary button color(green): #00C853
+    Logo text Font-family: Quicksand
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* Custom Buttons */
+.btn-custom-danger {
+    background: #F50057;
+    border-color: transparent;
+    color: white;
+}
+
+.btn-custom-danger:hover, .btn-custom-danger:focus, .btn-custom-danger:active {
+    background: rgb(228, 0, 80);
+    border-color: transparent;
+    color: white;
+}
+
+.btn-custom-primary {
+    background: #1E88E5;
+    border-color: transparent;
+    color: white;
+}
+
+.btn-custom-primary:hover, .btn-custom-primary:focus, .btn-custom-primary:active {
+    background: rgb(21, 124, 214);
+    border-color: transparent;
+    color: white;
+}
+
+.btn-custom-success {
+    background: #00C853;
+    border-color: transparent;
+    color: white;
+}
+
+.btn-custom-success:hover, .btn-custom-success:focus, .btn-custom-success:active {
+    background: rgb(3, 175, 75);
+    border-color: transparent;
+    color: white;
+}
+
+
+/* Bulma tweaks */
+.label {
+    font-weight: 500;
+}
+
+.input, .textarea {
+    background-color: #f9f9f9;
+}
+
+
+/* Navbar */
+.main-navbar {
+    border-bottom: 1px solid rgba(184, 184, 184, 0.33);
+    margin-bottom: .5rem;
+}
+
+.main-navbar .navbar-item {
+    padding: 1.3rem 1.3rem;
+}
+
+.main-navbar .navbar-brand .navbar-item {
+    color: #F50057;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar-end .buttons .button {
+    margin-bottom: .5rem;
+    margin-top: 1.3rem;
+}
+
+
+/* Form box for login and signup */
+.form-box {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.form-box__header {
+    margin-top: 2.5rem;
+}
+
+
+/* Plans */
+.listbuddy_plans {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Payment Plans */
+.payment_plan-box {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.payment_plan-price__monthly {
+    color: #1E88E5;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.payment_plan-price__yearly {
+    color: #F50057;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* Payment */
+.payment-box {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem 2rem;
+}
+.tabs.is-toggle li.is-active a {
+    background-color: rgb(209, 209, 209);
+    border-color: transparent;
+    color: inherit;
+}
+
+#tab-content .tab-content {
+    display: none;
+}
+  
+#tab-content .tab-content.is-active {
+    display: block;
+}
+
+
+/* Inside App */
+.app-box {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem 2rem;
+}
+
+/* Dashboard */
+.recent-form__list {
+    background-color: rgb(248, 248, 248);
+    border-radius: .2rem;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.recent-form__list--title {
+    border-bottom: 1px solid rgb(236, 234, 234);
+    color: #1E88E5;
+    padding-bottom: .5rem;
+}
+
+.recent-form__list--buttons {
+    padding-top: .8rem;
+}
+
+/* Form Builder (Tabs and Settings Section) */
+.form-builder-options-and-settings {
+    padding: 0rem;
+}
+
+.form-builder-options-and-settings__tabs {
+    padding: 0rem;
+}
+
+.form-builder-options-and-settings__content {
+    padding: 2.5rem 2rem 2.5rem 2rem;
+}
+
+.form-builder-options-and-settings__tabs > .tabs.is-boxed a {
+    background-color: #f5f5f5cc;
+}
+
+.form-builder-options-and-settings__tabs > .tabs li.is-active a {
+    color: #F50057;
+}
+
+.form-builder-options-and-settings__tabs > .tabs.is-boxed a:hover {
+    background-color: #fff;
+    color: #fb4757;
+}
+
+.form-builder-options-and-settings__content--btn {
+    border-color: #4a4a4a;
+    background-color: #f9f9f9d0;
+    color: #F50057;
+    width: 8.5rem;
+}
+
+/* Form Builder (Form Preview Section) */
+.form-builder-preview {
+    min-height: 80vh;
+}

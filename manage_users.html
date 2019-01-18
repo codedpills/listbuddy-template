@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ListBuddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/bulma-tooltip.min.css">
+    <link rel="stylesheet" href="assets/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent main-navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                   <h4>ListBuddy</h4>
+                </a>
+                <div class="navbar-burger burger" data-target="appnavbar">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+            
+            <div id="appnavbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="">
+                        Features
+                    </a>
+                    <a class="navbar-item" href="">
+                        Pricing
+                    </a>
+                    <a class="navbar-item" href="">
+                        Support
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            John Snow
+                        </a> 
+                        <div class="navbar-dropdown">
+                            <!-- Other navbar items -->
+                            <a href="#" class="navbar-item">Account settings</a>
+                            <a href="payment_settings.html" class="navbar-item">Payment Settings</a>
+                            <a href="" class="navbar-item">Manage Users</a>
+                        </div>
+                    </div>
+                    <a class="navbar-item is-active" href="">
+                        <span class="mdi mdi-logout"></span>
+                        &nbsp;
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="colums">
+        <div class="column is-8 is-offset-2">
+            <div class="box app-box">
+                <div class="field field-body" style="justify-content: space-between;">
+                    <div class="control">
+                        <h4 class="is-size-5">MANAGE USERS</h4>
+                    </div>
+                    <p class="control">
+                        <a href="#" class="button btn-custom-danger" id="user">
+                            <span class="mdi mdi-plus"></span> Add new user
+                        </a>
+                    </p>
+                    
+                    <!-- Modal to shoot form -->
+                    <div class="modal" id="add-user-modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                                <p class="modal-card-title">ADD NEW USER</p>
+                                <button class="delete" aria-label="close" id="cancel-delete"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                <!-- Content -->
+                                <form action="" method="">    
+                                    <div class="field">
+                                        <label class="label">First Name</label>
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="enter first name" name="first_name">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="field">
+                                        <label class="label">Last Name</label>
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="enter last name" name="last_name">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="field">
+                                        <label class="label">Email</label>
+                                        <div class="control">
+                                            <input class="input" type="email" placeholder="enter email" name="email">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="field field-body">
+                                        <div class="field">
+                                            <label class="label">Password</label>
+                                            <div class="control">
+                                                <input class="input" type="password" placeholder="enter password" name="password">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Confirm Password</label>
+                                            <div class="control">
+                                                <input class="input" type="password" placeholder="enter password" name="confirm_password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <p><b>Select Role</b></p>
+                                    <br>
+                                    <div class="field field-body">
+                                        <div class="field">
+                                            <label class="checkbox">
+                                                <input type="radio" name="role">
+                                                Administrator
+                                            </label>
+                                            <br>
+                                            <small class="has-text-info">Can manage other users</small>
+                                        </div>
+                                        <div class="field">
+                                            <label class="checkbox">
+                                                <input type="radio" name="role" checked>
+                                                Editor
+                                            </label>
+                                            <br>
+                                            <small class="has-text-info">Cannot manage users</small>
+                                        </div>
+                                    </div>
+                            </section>
+                            <footer class="modal-card-foot" id="user-modal-card-foot">
+                                <button value="submit" class="button btn-custom-danger">
+                                    Add User
+                                </button>
+                                </form>
+                                <button class="button" id="canceled">Cancel</button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="users">
+                    <h5 class="is-size-5">All Current Users</h5>
+                    <table class="table is-hoverable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Full name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jon Snow</td>
+                                <td>jon@email.com</td>
+                                <td>Admin</td>
+                                <td>
+                                    <a href="" class="button btn-custom-primary tooltip" data-tooltip="Edit user">
+                                        <span class="mdi mdi-lead-pencil"></span>
+                                    </a>
+                                    <a href="" class="button btn-custom-danger tooltip" data-tooltip="Delete user">
+                                        <span class="mdi mdi-delete"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Toggle modal
+        document.querySelector('a#user').addEventListener('click', function(event) {
+            event.preventDefault();
+            var modal = document.querySelector('#add-user-modal');
+            var html = document.querySelector('html');
+            var close = document.querySelector('#user-modal-card-foot');
+            modal.classList.add('is-active');
+            html.classList.add('is-clipped');
+
+            modal.querySelector('button#cancel-delete').addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.classList.remove('is-active');
+                html.classList.remove('is-clipped');
+            });
+
+            close.querySelector('button#canceled').addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.classList.remove('is-active');
+                html.classList.remove('is-clipped');
+            })
+        });
+    </script>
+
+</body>
+</html>
+

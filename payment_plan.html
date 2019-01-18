@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ListBuddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent main-navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                   <h4>ListBuddy</h4>
+                </a>
+                <div class="navbar-burger burger" data-target="appnavbar">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+            
+            <div id="appnavbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="">
+                        Features
+                    </a>
+                    <a class="navbar-item" href="">
+                        Pricing
+                    </a>
+                    <a class="navbar-item" href="">
+                        Support
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            John Snow
+                        </a> 
+                        <div class="navbar-dropdown">
+                            <!-- Other navbar items -->
+                            <a href="#" class="navbar-item">Account settings</a>
+                            <a href="payment_settings.html" class="navbar-item">Payment Settings</a>
+                            <a href="" class="navbar-item">Manage Users</a>
+                        </div>
+                    </div>
+                    <a class="navbar-item is-active" href="">
+                        <span class="mdi mdi-logout"></span>
+                        &nbsp;
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="colums">
+        <div class="column is-6 is-offset-3">
+            <div class="form-box__header">
+                <h3 class="is-size-5 has-text-centered">Select Payment Plan For Limited User Account</h3>
+            </div>
+            
+            <div class="columns">
+                <div class="column">
+                    <div class="box payment_plan-box has-text-centered">
+                        <h4 class="is-size-5">Monthly Plan</h4>
+                        <br>
+                        <p>
+                            <sup>$</sup><i class="payment_plan-price__monthly">10</i><sub>/month</sub>
+                        </p>
+                        <br>
+                        <button class="button btn-custom-primary is-fullwidth">Choose</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box payment_plan-box has-text-centered">
+                        <h4 class="is-size-5">Yearly Plan</h4>
+                        <br>
+                        <p>
+                            <sup>$</sup><i class="payment_plan-price__yearly">100</i><sub>/year</sub>
+                        </p>
+                        <br>
+                        <button class="button btn-custom-danger is-fullwidth">Choose</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
