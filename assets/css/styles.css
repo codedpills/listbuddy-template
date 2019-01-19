@@ -16,6 +16,12 @@
     color: white;
 }
 
+.btn-custom-danger-outline {
+    border-color: #F50057;
+    background-color: transparent;
+    color: #F50057;
+}
+
 .btn-custom-danger:hover, .btn-custom-danger:focus, .btn-custom-danger:active {
     background: rgb(228, 0, 80);
     border-color: transparent;
@@ -28,6 +34,12 @@
     color: white;
 }
 
+.btn-custom-primary-outline {
+    border-color: #1E88E5;
+    background-color: transparent;
+    color: #1E88E5;
+}
+
 .btn-custom-primary:hover, .btn-custom-primary:focus, .btn-custom-primary:active {
     background: rgb(21, 124, 214);
     border-color: transparent;
@@ -38,6 +50,12 @@
     background: #00C853;
     border-color: transparent;
     color: white;
+}
+
+.btn-custom-success-outline {
+    border-color: #00C853;
+    background-color: transparent;
+    color: #00C853;
 }
 
 .btn-custom-success:hover, .btn-custom-success:focus, .btn-custom-success:active {
