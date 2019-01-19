@@ -144,8 +144,10 @@
 .payment-box {
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
+    min-height: 30rem;
     padding: 2.5rem 2rem;
 }
+
 .tabs.is-toggle li.is-active a {
     background-color: rgb(209, 209, 209);
     border-color: transparent;
